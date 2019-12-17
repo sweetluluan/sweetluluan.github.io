@@ -1,22 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <style>
-        *{
+        * {
             margin: 0;
             padding: 0;
         }
-        img{
+
+        img {
             width: 100%;
+        }
+
+        #hsyd {
+            width: 5%;
+            top: 4.3%;
+            right: 25%;
+            position: absolute;
+            overflow: hidden;
+            -webkit-animation: hsydmove 5s infinite;
+            animation: hsydmove 5s infinite;
+        }
+
+        @-webkit-keyframes hsydmove {
+            50% {
+                right: 40%;
+            }
+        }
+
+        @keyframes hsydmove {
+            50% {
+                right: 40%;
+            }
+        }
+
+        #lsyd {
+            width: 5%;
+            top: 0.7%;
+            right: 45%;
+            position: absolute;
+            -webkit-animation: lsydmove 5s infinite;
+            animation: lsydmove 5s infinite;
+        }
+
+        @-webkit-keyframes lsydmove {
+            50% {
+                right: 30%;
+            }
+        }
+
+        @keyframes lsydmove {
+            50% {
+                right: 30%;
+            }
         }
     </style>
 </head>
+
 <body>
-    <img src="./img/fm.png">
+    <img src="./img/fm.png" id="fm" />
     <img src="./img/1.png" alt="">
     <img src="./img/2.png" alt="">
     <img src="./img/3.png" alt="">
@@ -25,5 +71,8 @@
     <img src="./img/6.png" alt="">
     <img src="./img/7.png" alt="">
     <img src="./img/8.png" alt="">
+    <img src="./img/lsyd.png" id="lsyd" />
+    <img src="./img/hsyd.png" id="hsyd" />
 </body>
+
 </html>
