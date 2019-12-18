@@ -6,102 +6,85 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>视觉可视化期末作业</title>
-    <link rel="stylesheet" href="./css/index.css">
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
     <style>
-        #id2 {
-            padding: 3% 0 3% 0;
+        * {
+            margin: 0;
+            padding: 0;
         }
 
-        #id21 {
-            padding: 2.5% 0 2.5% 10%;
+        img {
+            width: 100%;
         }
 
-        #id211 {
-            margin-top: 7%;
-            left: 30%;
-            z-index: -1;
-            position: relative;
-            width: 45%;
-        }
-
-        #id212 {
-            padding: 2.5% 0 2.5% 10%;
-        }
-
-        #id221 {
-            margin-top: 12%;
-            position: relative;
-            width: 80%;
-            z-index: -1;
-        }
-
-        #id222 img {
-            margin-top: 6%;
-            margin-left: -2%;
-            width: 50%;
-            left: 15%;
-            position: relative;
-        }
-
-        #gif {
-            width: 6%;
+        #hsyd {
             position: absolute;
-            top: 10.65%;
-            left: 55%;
+            z-index: 1;
+            width: 5%;
+            right: 30%;
+            top: 35.5%;
+            animation: myhsyd 5s infinite;
+            -webkit-animation: myhsyd 5s infinite;
+        }
+
+        @-webkit-keyframes myhsyd {
+            50% {
+                right: 10%;
+            }
+        }
+
+        @keyframes myhsyd {
+            50% {
+                right: 10%;
+            }
+        }
+
+        #lsyd {
+            position: absolute;
+            z-index: 1;
+            width: 5%;
+            right: 34%;
+            top: 14%;
+            animation: mylsyd 5s infinite;
+            -webkit-animation: mylsyd 5s infinite;
+        }
+
+        @-webkit-keyframes mylsyd {
+            50% {
+                right: 42.5%;
+            }
+        }
+
+        @keyframes mylsyd {
+            50% {
+                right: 42.5%;
+            }
+        }
+
+        #tea {
+            position: absolute;
+            z-index: 1;
+            width: 5%;
+            right: 40%;
+            top: 84%;
         }
     </style>
 </head>
 
 <body>
-    <img src="./img/fm.png" id="fm" />
+    <div style="position: absolute;">
+        <img src="./img/fm.png" alt="">
+        <img id="hsyd" src="./img/hsyd.png" alt="">
+        <img id="lsyd" src="./img/lsyd.png" alt="">
+        <img id="tea" src="./img/tea.gif" alt="">
+    </div>
     <img src="./img/1.png" alt="">
-    <div class="wrap">
-        <div class="row" id='id2'>
-            <div class="col-sm-6" id='id21'>
-                <img id="id211" src="./img/l2.png" alt="">
-                <div id="id212">
-                    <canvas id="myChart2"></canvas>
-                </div>
-            </div>
-            <div class="col-sm-6" id='id22'>
-                <div id="id221">
-                    <img src="./img/22.png" alt="">
-                </div>
-                <div id="id222">
-                    <img src="./img/l1.png" alt="">
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- <img src="./img/2.png" alt=""> -->
+    <img src="./img/2.png" alt="">
     <img src="./img/3.png" alt="">
-    <div class="wrap">
-        <div class="row" id="id4">
-            <div class="col-sm-6" id="id41">
-                <canvas id="myChart1"></canvas>
-            </div>
-            <div class="col-sm-6" id="id42">
-                <div id="id421">
-                    <img src="./img/sw.png" alt="">
-                </div>
-                <div id="id422">
-                    <p>在香港旅游业整体遇冷的背景下，与其相关的多个行业也受到波及，因6月以来访港旅客人数骤减，2019年香港食肆收益价值也由6月之前的总体向好转变为连续下滑，在本该成为旺季的暑期跌至同期最低。</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- <img src="./img/5.png" alt=""> -->
+    <img src="./img/4.png" alt="">
+    <img src="./img/5.png" alt="">
     <img src="./img/6.png" alt="">
     <img src="./img/7.png" alt="">
     <img src="./img/8.png" alt="">
-    <img src="./img/lsyd.png" id="lsyd" />
-    <img src="./img/hsyd.png" id="hsyd" />
-    <img src="./img/tea.gif" id="gif" alt="">
-    <script src="./js/chart.js"></script>
-    <script src="./js/index.js"></script>
-    <script>
-    </script>
 </body>
 
 </html>
