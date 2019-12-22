@@ -72,21 +72,29 @@
 
 <body>
     <div style="position: relative;">
-        <img src="./img/fm.png" alt="">
-        <img id="hsyd" src="./img/hsyd.png" alt="">
-        <img id="lsyd" src="./img/lsyd.png" alt="">
-        <img id="tea" src="./img/tea.gif" alt="">
+        <img class="lazy" src="./img/fm.png" alt="">
+        <img class="lazy" id="hsyd" src="./img/hsyd.png" alt="">
+        <img class="lazy" id="lsyd" src="./img/lsyd.png" alt="">
+        <img class="lazy" id="tea" src="./img/tea.gif" alt="">
     </div>
-    <img src="./img/1.png" alt="">
-    <img src="./img/2.png" alt="">
-    <img src="./img/3.png" alt="">
-    <img src="./img/4.png" alt="">
-    <img src="./img/5.png" alt="">
-    <img src="./img/6.png" alt="">
-    <img src="./img/7.png" alt="">
-    <img src="./img/8.png" alt="">
+    <img class="lazy" src="./img/1.png" alt="">
+    <img class="lazy" src="./img/2.png" alt="">
+    <img class="lazy" src="./img/3.png" alt="">
+    <img class="lazy" src="./img/4.png" alt="">
+    <img class="lazy" src="./img/5.png" alt="">
+    <img class="lazy" src="./img/6.png" alt="">
+    <img class="lazy" src="./img/7.png" alt="">
+    <img class="lazy" src="./img/8.png" alt="">
     <script src="./js/jquery.min.js"></script>
     <script src="./js/jquery.lazyload.js"></script>
+    <script>
+        $(function () {
+            $("img.lazy").lazyload({
+                effect: "fadeIn",
+                threshold: 200
+            });
+        })
+    </script>
 </body>
 
 </html>
