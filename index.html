@@ -73,8 +73,8 @@
 <body>
     <div style="position: relative;">
         <img class="lazy" src="./img/fm.png" alt="">
-        <img class="lazy" id="hsyd" src="./img/hsyd.png" alt="">
         <img class="lazy" id="lsyd" src="./img/lsyd.png" alt="">
+        <img class="lazy" id="hsyd" src="./img/hsyd.png" alt="">
         <img class="lazy" id="tea" src="./img/tea.gif" alt="">
     </div>
     <img class="lazy" src="./img/1.png" alt="">
@@ -91,6 +91,7 @@
         $(function () {
             $("img.lazy").lazyload({
                 effect: "fadeIn",
+                threshold: 200
             });
         })
     </script>
